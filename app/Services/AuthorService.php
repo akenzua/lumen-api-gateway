@@ -9,7 +9,14 @@ class AuthorService {
 
     public $baseUri;
 
-    public function __constructor(){
+    public function __construct()
+    {
         $this->baseUri = config('services.authors.base_uri');
     }
+
+    public function obtainAuthors(){
+
+        return $this->performRequest('GET', '/authors');
+    }
+    
 }
