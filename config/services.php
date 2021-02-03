@@ -2,7 +2,7 @@
 
 return [
     'authors' => [
-        'base_uri' => 'localhost:8000',
+        'base_uri' => env('AUTHORS_SERVICE_BASE_URL'),
         'secret' => env('AUTHORS_SERVICE_SECRET'),
     ],
 

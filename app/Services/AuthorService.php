@@ -5,6 +5,7 @@ namespace App\Services;
 use App\Traits\ConsumesExternalService;
 
 class AuthorService {
+    
     use ConsumesExternalService;
 
     public $baseUri;
